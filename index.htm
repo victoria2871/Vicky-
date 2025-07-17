@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+  <h1 id="titulo">
+</body>
+<script>
+
+function agregarElemento(texto, color, fondo) {
+  let crearElemento = document.createElement("h1");
+  crearElemento.innerHTML = texto;
+  crearElemento.style.color = color;
+  crearElemento.style.backgroundColor = fondo;
+  document.body.appendChild(crearElemento);
+  return crearElemento;
+}
+
+// Crear el texto "holaaaaa" de color violeta y fondo amarillo
+agregarElemento("holaaaaa", "violet", "yellow");
+
+// Crear el texto solicitado en color rojo
+agregarElemento("amar es este silencio cerca de ti, sin que lo sepas, y recordar tu voz cuando te marchas", "red", "transparent");
+
+</script>
+</html>
